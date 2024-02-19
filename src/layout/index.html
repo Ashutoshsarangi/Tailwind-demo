@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid gap-4 sm:grid-cols-2">
+      <div class="min-h-[100px] rounded-lg bg-orange-600"></div>
+      <div class="min-h-[100px] rounded-lg bg-pink-600"></div>
+    </div>
+
+    <!-- Here the Break Point is sm: greater than small size split the grid to 2 cols by default it is focus on the smaller screen sizes -->
+    <hr />
+    <h1 class="">New design with 3 cols</h1>
+    <div class="grid gap-4 sm:grid-cols-3">
+      <div class="min-h-[100px] rounded-lg bg-orange-600 shadow-xl"></div>
+      <div class="min-h-[100px] rounded-lg bg-red-600 shadow-xl"></div>
+      <div class="min-h-[100px] rounded-lg bg-blue-600 shadow-xl"></div>
+    </div>
+    <hr />
+    <h1 class="">Non Equal design with 2 cols</h1>
+    <div class="grid gap-4 sm:grid-cols-12">
+      <div class="min-h-[100px] rounded-lg bg-orange-600 sm:col-span-4"></div>
+      <div
+        class="min-h-[100px] grid-cols-8 rounded-lg bg-red-600 sm:col-span-8"
+      ></div>
+    </div>
+
+    <h1 class="">Non Equal design with 3 cols</h1>
+    <div class="grid gap-4 sm:grid-cols-12">
+      <div class="min-h-[100px] rounded-lg bg-orange-600 sm:col-span-2"></div>
+      <div
+        class="min-h-[100px] grid-cols-8 rounded-lg bg-red-600 sm:col-span-8"
+      ></div>
+      <div class="min-h-[100px] rounded-lg bg-violet-600 sm:col-span-2"></div>
+    </div>
+  </body>
+</html>
